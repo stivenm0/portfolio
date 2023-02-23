@@ -1,0 +1,34 @@
+.container_skills{
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .skills{
+    margin: 1.5rem 0;
+  }
+  
+  .skills_card{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgba(36, 36, 212, 0.171);
+    box-shadow: 5px 5px 0px blueviolet,
+    7px 7px 0px rgb(0, 0, 0);
+    margin: 2px;
+  }
+
+  
+  .skills_card>img{
+    width: 40%;
+    padding: .5rem;
+  }
+  
+  .skills_card:hover{
+    transition: all .2s;
+   box-shadow: none;
+  
+  }
+  

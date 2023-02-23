@@ -1,0 +1,144 @@
+#menu, #close,.navbar, .navbar_menu{ position: fixed; top: 0px;}
+
+#menu, #close{
+  right: 10px;
+  cursor: pointer;
+}
+
+body{color: #08D763; }
+
+/* .header{
+  background: conic-gradient(at right bottom, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42));
+
+} */
+
+.header>*, main>section{
+  padding: 5%;
+}
+
+.navbar{
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar_menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 52, 90, 0.288);
+}
+
+.navbar_title{
+  z-index: 1000;
+
+}
+
+.navbar_menu>li>a{color: #72f5ab;  }
+
+.navbar_menu>li>a:hover{
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px solid blanchedalmond;
+}
+
+
+.header, .header_info{ width: 100%; height: 100vh; }
+
+
+.header_info_img{
+  margin-top: 2rem;
+  width: 100%;
+  height: 50%;
+  z-index: -10;
+}
+
+.header_info_email{
+  text-align: center;
+  font-size: 5vw;
+}
+
+.header_info_title{
+  font-size: 5.5vw;
+  margin: 20px 0;
+}
+
+.header_info_description{
+  font-size: 1.1rem;
+  color: aliceblue;
+}
+
+
+.header_networks{
+  width: 100%;
+  font-weight: 600;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.header_networks>a{
+  background-color: #08D763;
+  padding: .2rem;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+
+
+}
+
+
+/*
+
+
+.networks>a{
+  cursor: pointer;
+  padding: 1px;
+  border-bottom: 1px solid black;
+  color: darkblue;
+}
+
+@media (max-width: 500px) {
+
+  .mi_title{
+    font-size: 5.9vw;
+    padding-right: 25px;
+    margin: 10px 0;
+  }
+  
+  .mi_text, .networks>a{
+    font-size: 4vw
+  }  
+} */
+
+/* 
+@media (max-width: 600px){
+  .mi_title{
+    
+    padding-right: 25px;
+    margin: 10px 0;
+  }
+  
+  .mi_text, .networks>a{
+    font-size: 3.3vw
+  }  
+} */
+
+
+/* 
+main{
+  display: none;
+} */
+
+
+
+.show{ display: flex ; }
+.hide{ display: none; }

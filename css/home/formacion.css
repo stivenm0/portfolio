@@ -1,0 +1,31 @@
+.formacion_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.formacion_container_card{
+    width: 70%;
+    /* height: 300px; */
+    max-width: 300px;
+   
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(36, 36, 212, 0.171);
+    text-align: center;
+    color: aliceblue;
+    border-radius: 1rem;
+}
+
+.formacion_container_card>p{
+    padding: 10px;
+}
+
+.formacion_container_card>img{
+    display: inline-block;
+    background-color: aliceblue;
+    border-radius: 1rem 1rem 0 0;
+    max-height: 200px;
+    height: 33vw;
+    width: 100%;
+}

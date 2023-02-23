@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,500&family=Sofia+Sans:wght@500&display=swap');
+
+:root{
+  --bg-page: #2C2C2C;
+  --color-font-one: white;
+  --color-font-two: #08D763;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+
+html{ scroll-behavior: smooth; }
+
+ul, li, a{
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #4948a3 #545454;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #545454;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #00863a;
+    border-radius: 20px;
+    border: 3px none #ffffff;
+  }
+
+
+body{
+  /* background-color: var(--bg-page); */
+  background: conic-gradient(at right bottom, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42));
+  /* background: conic-gradient(at left center, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42)); */
+  
+}
+
+

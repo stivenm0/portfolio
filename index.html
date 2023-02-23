@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/Favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/home/Header.css">
+
+    <link rel="stylesheet" href="./css/home/SobreMi.css">
+
+    <link rel="stylesheet" href="./css/home/Skills.css">
+
+    <link rel="stylesheet" href="./css/home/Formacion.css">
+ 
+    <link rel="stylesheet" href="./css/home/Proyectos.css">
+
+    <link rel="stylesheet" href="./css/home/Contacto-footer.css"> 
+
+    <link rel="stylesheet" href="./css/home/test.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Stivenm0</title>
+</head>
+<body>
+
+
+    <!-- ------------HEADER------------------- -->
+    <header class="header" >
+        <!-- --------------------BARRA NAVEGACION------------- -->
+        <nav class="navbar ">
+            <h3 class="navbar_title"> < Stivenm0 >  </h3>
+
+            <ul class="navbar_menu animate__animated animate__faster hide" id="list" >
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="">Contáctame</a></li>
+            </ul>
+
+            <img src="./src/menu/menu.svg" class="animate__animated animate__faster" 
+            alt="menu" id="menu" onclick="openMenu()">
+            <img src="./src/menu/close.svg" class="animate__animated animate__faster hide" 
+            alt="close menu" id="close" onclick="openMenu()" >
+        </nav>
+
+        <section class="header_info">
+            <div class="header_info_img">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player width="100%" height="100%" src="https://assets5.lottiefiles.com/packages/lf20_ca38h6i1.json"  background="transparent"  speed="1"    loop  autoplay></lottie-player>
+            </div>
+            
+                
+                <p class="header_info_email">macarny4@gmail.com</p>
+
+                <h1 class="header_info_title">
+                Hola, mi nombre es Estiven <br> y soy Desarrollador Frontend.
+                </h1>
+                
+                <p class="header_info_description">
+                    Estudiante de Ingeniería de Sistemas y Desarrollador Web enfocado en área del Frontend con React.
+                </p>
+
+                <div class="header_networks">
+                    <a  href="https://github.com/stivenm0" target="_blank">Github↗</a>
+                    <a  href="https://github.com/stivenm0" target="_blank">Linkedin↗</a>
+                    <a  href="https://github.com/stivenm0" target="_blank">Curriculo↗</a>
+                </div>
+                <hr class="borde">
+        </section>    
+        
+    </header>
+
+
+
+    <main>
+        <!-- -----------SOBRE MI--------------------- -->
+         <section class="sobreMi" id="sobre-mi">
+            <h1 class="sobreMi_title">Sobre mí</h1>
+
+            <p class="sobreMi_text">
+                Cuento con conocimientos en Frontend y también bases sobre Backend con PHP, además de conocer buenas prácticas como la metodología <strong>BEM</strong>, <strong>diseño Mobile First </strong>, <strong>diseño responsivo</strong> ente otras. Gran parte de mis conocimientos los he adquirido de forma autodidacta y el resto en cursos o capacitaciones.
+            <br>
+                Anhelo encontrar trabajo en la industria del desarrollo web a la vez que termino mi pregrado a fin de crecer profesionalmente. Me interesa el estar en constante aprendizaje, soy una persona flexible, responsable, con comunicación asertiva y dispuesto a la resolución de problemas.
+            </p>
+        </section>
+
+   <!-- ---------------SKILLS------------------------ -->
+        <section class="skills" id="skills">
+            <h1>Skills</h1>
+
+            <div class="container_skills">
+                <div class="skills_card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" loading="lazy"/>
+
+                    <div>HTML5</div>
+                </div>
+
+                <div class="skills_card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Css"/>
+            
+                    <div>CSS</div>
+                </div>
+
+                <div class="skills_card">            
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+
+                    <div>Bootstrap</div>
+                </div>
+
+                <div class="skills_card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            
+                    <div>JavaScript</div>
+                </div>
+
+                <div class="skills_card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+            
+                    <div>Git</div>
+                </div>
+
+                <div class="skills_card">    
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+            
+                    <div>PHP</div>
+                </div>
+            </div>
+
+        </section>
+
+    
+   <!-- ----------------FORMACION----------------------- -->
+        <section class="formacion" id="formacion">
+            <h1>Formación Académica</h1>
+            <div class="formacion_container">
+
+                    <div class="formacion_container_card">
+                        <img src="./src/formacion/logo-unad.png" alt="Universidad Nacional Abierta y a Distancia" draggable="false"  >
+                        <p>Ingeniería de Sistemas <br>
+                            2021 - Actualmente
+                        </p>
+                    </div>
+
+                    <div class="formacion_container_card">
+                        <img src="./src/formacion/logo-one.png" alt="One Oracle Next Education" draggable="false"  loading="lazy" >
+                        <p>Desarrollo Frontend  <br>
+                            2022 - 2023 Alura
+                        </p>
+                    </div>
+
+                    <div class="formacion_container_card">
+                        <img src="./src/formacion/logo-utp.png" alt="Mision Tic" draggable="false"  >
+                        <p>Desarrollo Web <br>
+                            2022 - 2022 UTP 
+                        </p>
+                    </div>
+            </div>
+        </section>
+   <!-- ---------------PROYECTOS------------------------ -->
+        <section class="proyectos" id="proyectos">
+                <h1 class="proyectos_title" >Experiencia Profesional</h1>
+                <button class="left" id="left" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#08D763" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/></svg>
+                </button>
+                <button class="right" id="right" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#08D763" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 17l5-5-5-5M6 17l5-5-5-5"/></svg>
+                </button>
+
+                
+                <div class="proyectos_card animate__animated animate__faster" id="proyecto">
+                    <img src="" alt="proyecto" id="project_img">
+                    
+                    <div class="proyectos_card_details" id="project_details">
+                        <p ></p>
+                        <a href="">Github</a>
+                        <a href="">Demo</a>
+                    </div>
+
+                </div>
+
+        </section>
+
+       
+     <!-- ---------------CONTACTO------------------------ -->
+        <section class="contacto">
+            <h1>Contacto</h1>
+
+            <p>
+                ¿Quieres contactarme?
+                Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
+            </p>
+
+            <form class="contacto_form">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <textarea></textarea>
+                <button>Enviar Mensaje</button>
+            </form>
+        </section> 
+
+
+    </main>
+
+
+<hr>
+    <footer>    
+        Desarrollado por Stivenm0 
+        <br>
+        -- 2023 --
+    </footer>
+    
+
+    <script  src="./js/main.js" ></script>
+    <script type="module" src="./js/carrusel.js" ></script>
+</body>
+</html>
