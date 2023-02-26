@@ -22,7 +22,7 @@
 
   
   .skills_card>img{
-    width: 40%;
+    width: 30%;
     padding: .5rem;
   }
   
@@ -32,3 +32,10 @@
   
   }
   
+  .skills_card:nth-child(7),
+  .skills_card:nth-child(8),
+  .skills_card:nth-child(9),
+  .skills_card:nth-child(10){
+    opacity: .5;
+    box-shadow: none;
+  }

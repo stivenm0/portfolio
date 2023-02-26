@@ -15,7 +15,10 @@
   font-style: italic;
 }
 
-html{ scroll-behavior: smooth; }
+html{ scroll-behavior: smooth; 
+/* opacity: .8; */
+  /* animation: op 10s infinite  ease-in-out; */
+  }
 
 ul, li, a{
   list-style: none;
@@ -46,10 +49,29 @@ ul, li, a{
 
 
 body{
-  /* background-color: var(--bg-page); */
   background: conic-gradient(at right bottom, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42));
-  /* background: conic-gradient(at left center, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42)); */
-  
+  box-shadow: inset 5px 5px 100px rgba(89, 28, 135, 0.219), inset -5px -5px 100px rgba(89, 28, 135, 0.308) ;    
+  /* filter: saturate(30%); */
+
 }
 
 
+h1{
+  margin-bottom: 1rem;
+}
+
+p{
+  color: aliceblue;
+}
+
+/* @keyframes op {
+  0%{
+    filter: grayscale(0%);
+  }
+  50%{
+    filter: grayscale(100%);
+  }
+  100%{
+    filter: grayscale(0%);
+  }
+} */

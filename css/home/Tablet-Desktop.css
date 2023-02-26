@@ -1,0 +1,169 @@
+@media (min-width: 315px) {
+  .sobreMi, .contacto{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
+
+  main>section>h1{ text-align: center; }
+
+  .contacto>h1,
+  .contacto>p{
+    align-self: center;
+  }
+}
+
+@media (min-width: 440px) {
+  .header_info_title, h1{ font-size: 4vw; }
+  .header_info_email{ font-size: 1.5rem; }
+  .header_info_description, .sobreMi_text{ font-size: 3vw; }
+
+  .sobreMi_text{ line-height: 1.6rem; }
+
+  .header_networks{
+    gap: 1rem;
+    font-size: 2.8vw;
+  }
+
+  .skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+
+
+@media (min-width: 510px) {
+  main, .header>*:not(nav){
+    padding: 7%;
+  }
+
+  
+   
+
+}
+
+
+@media (min-width: 640px) {
+  .header_info_img{ height: 45vh; }
+  .header_info_email{ font-size: 1.5rem; }
+  .header_info_description, .sobreMi_text{ font-size: 2.2vw; }
+
+  .header_networks{
+    gap: 1rem;
+    font-size: 2vw;
+  }
+
+
+  .skills_card{
+    flex-direction: column;
+}
+
+.skills_card>img{
+    width: 60%;
+    padding: .5rem;
+  }
+
+  .proyectos_card{
+    width: 90%;
+    height: 70%;
+  }
+
+  .proyectos_card>img{
+    object-fit: cover;
+  height: 70%;}
+
+  .proyectos_card_details>p{
+    font-size: 1.5em;
+  }
+  .proyectos_card_details>a{
+    font-size: 1.5em;
+  }
+
+  .contacto_form{
+    width: 80%;
+    padding: 1rem 2rem;
+  }
+
+  .contacto_form>input{
+    height: 2rem;
+  }
+
+}
+
+
+@media (min-width: 820px) {
+  #menu, #close{ display: none; }
+
+  .formacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  main, .header>*:not(nav){
+    padding: 5% 10%;
+  }
+
+  .navbar{
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+
+  .navbar_menu{
+    display: flex;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background: none;
+    backdrop-filter: initial;
+  }
+
+  
+}
+
+@media (min-width: 940px) {
+  .header_info_img{ height: 80vh; }
+  .header_info_email{ font-size: 1.5rem; }
+  .header_info_title, h1{ font-size: 2rem; }
+  .header_info_description{ font-size: 1.5rem; }
+  .header_networks{ font-size: 1.2rem; }
+
+  .sobreMi_text{
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .header_info{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .skills_card{
+    padding: 1rem;
+}
+
+.skills_card>img{
+  width: 80%;
+  /* padding: .5rem; */
+}
+
+}
+
+@media (min-width: 1000px) {
+  main, .header>*{
+    padding: 0 12%;
+  }
+
+  .navbar_menu{ font-size: 1.2rem; }
+
+  .contacto_form{
+    width: 65%;
+    padding: 1rem 2rem;
+  }
+}

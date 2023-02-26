@@ -1,8 +1,54 @@
+/* .sobreMi{
+    background-image: url("../../src/textu.svg");
+    background-position: bottom;
+    background-size: contain;
+} */
+
+
 .sobreMi_text{
     color: aliceblue;
+    line-height: 1.3rem;
+    transition: all 1s ease-in-out;
+    
 }
 
 .sobreMi_text>strong{
     color: #08D763;
+    font-style:  normal;
+    padding: 0px 10px;
+
 
 }
+
+.sobreMi_text>strong:nth-child(1){
+    border-radius: 10px;
+    color:rgb(0, 0, 0); 
+    background-color: rgb(228, 129, 16);
+} 
+
+.sobreMi_text>strong:nth-child(2), 
+.sobreMi_text>strong:nth-child(3), 
+.sobreMi_text>strong:nth-child(4){
+    border-radius: 10px;
+    color:aliceblue; 
+    background-color: rgb(32, 92, 202);
+}
+
+.sobreMi_text>strong:nth-child(5){
+    border-radius: 10px;
+    color:rgb(0, 0, 0); 
+    background-color: rgb(246, 250, 0);
+}
+
+.full{
+    opacity: 0;
+   
+  }
+
+
+  .pr{
+    width: 30%;
+    left: 0;
+    z-index: -100;
+    position: absolute;
+  }

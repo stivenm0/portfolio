@@ -8,7 +8,7 @@ let contador = 0;
 function onCarrusel(position=0){
     p_img.src = proyectos[position].image;
     console.log(p_details.children)
-    p_details.children[0].innerText = proyectos[position].description;
+    p_details.children[0].innerHTML = proyectos[position].description;
     p_details.children[1].href = proyectos[position].github;
     p_details.children[2].href = proyectos[position].demo;
 }

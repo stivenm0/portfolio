@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* text-align: center; */
+}
+
+.contacto>h1,
+.contacto>p{
+    align-self: flex-start;
 }
 
 .contacto_form{
@@ -11,23 +15,98 @@
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: .2rem;
     background-color: rgba(36, 36, 212, 0.171);
     border: 1px solid aliceblue;
-    box-shadow: 5px 5px 15px #08d7627c, -5px -5px 15px #08d76283 ;
+    box-shadow: 5px 5px 15px #08d76231, -5px -5px 15px #08d7623d ;
     border-radius: 1rem;
+    color: aliceblue;
 }
 
 .contacto_form>input{
-    border-radius: 10px;
+    background-color: transparent;
     padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+
+}
+
+.contacto_form>input:focus{
+    border-bottom: 5px solid rgb(26, 131, 66);
 }
 
 
+
+.contacto_form>textarea{
+    max-width: 100%;
+    background-color: transparent;
+    padding: .5rem;
+     max-height: 500px;
+}
+
+.contacto_form>textarea:focus{
+    outline: none;
+   
+    
+}
+
+.contacto_form>input, 
+.contacto_form>textarea{
+    font-size: 1em;
+    color: aliceblue;
+}
+
+.contacto_form>button{
+    background-color:rgb(88, 28, 135);
+    color: aliceblue;
+    margin: .3rem 0;
+    border: 0px;
+    padding: .5rem;
+    border: 1px solid aliceblue;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contacto_form>button:hover{
+    box-shadow: 0px 2px 4px rgba(240, 248, 255, 0.637);
+}
+
+
+
+
 footer{
-    box-shadow: 0px -5px 10px rgb(88, 28, 135);
     background-color: rgb(22, 20, 20);
     color: rgb(88, 28, 135);
     text-align: center;
     padding: .5rem;
+    animation: pie 5s infinite ease-in-out;
+ 
   }
+
+
+@keyframes pie{
+    1%{
+        box-shadow: 0px -5px 100px rgba(166, 182, 25, 0.13);
+    }
+    20%{
+        box-shadow: 0px -5px 100px rgba(166, 182, 25, 0.295);
+    }
+    40%{
+        box-shadow: 0px -5px 100px rgba(166, 182, 25, 0.877);
+    }
+    
+    60%{
+        box-shadow: 0px -5px 100px rgba(166, 182, 25, 0.664);
+    }
+    80%{
+        box-shadow: 0px -5px 100px rgba(135, 133, 28, 0.452)
+    }
+    100%{
+        box-shadow: 0px -5px 100px rgba(166, 182, 25, 0.123);
+
+    }
+}

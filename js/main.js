@@ -1,11 +1,14 @@
-// import {inicioCarrusel, proyecto, onLeft, onRight}  from "./carrusel.js";
+let nav = document.getElementById("navbar")
 
 
 
-
-// console.log(proyecto.children)
-
-
+window.addEventListener("scroll", ()=>{
+    if(window.scrollY>10){
+        nav.classList.add("navbar_bg")
+    }else{
+        nav.classList.remove("navbar_bg")
+    }
+})
 
 
 let menu = document.getElementById("menu");
@@ -29,3 +32,23 @@ function openMenu(){
     }, 200);
 }
 
+
+
+function contacto(e){
+    e.preventDefault();
+    console.log(e.target.nombre.value)
+}
+
+
+let sobre = document.getElementById("sob")
+
+const observer = new IntersectionObserver((objetos)=>{
+    if(objetos[0].isIntersecting){
+        objetos[0].target.classList.remove("full");
+    }
+    console.log(objetos)
+},{
+
+});
+
+observer.observe(sobre);
