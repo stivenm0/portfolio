@@ -7,7 +7,6 @@ let contador = 0;
 
 function onCarrusel(position=0){
     p_img.src = proyectos[position].image;
-    console.log(p_details.children)
     p_details.children[0].innerHTML = proyectos[position].description;
     p_details.children[1].href = proyectos[position].github;
     p_details.children[2].href = proyectos[position].demo;
@@ -52,9 +51,10 @@ function onRight(position){
 onCarrusel();
 
 
+
+
 let left = document.getElementById("left");
 let right = document.getElementById("right");
-
 
 
 left.addEventListener("click", ()=>{
@@ -63,7 +63,6 @@ left.addEventListener("click", ()=>{
     }else{
         contador--;
     }
-
     onLeft(contador)
 
 })
@@ -76,7 +75,6 @@ right.addEventListener("click", ()=>{
         contador++;
     }
     onRight(contador)
-
 })
 
 

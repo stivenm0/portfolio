@@ -51,27 +51,17 @@ ul, li, a{
 body{
   background: conic-gradient(at right bottom, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42));
   box-shadow: inset 5px 5px 100px rgba(89, 28, 135, 0.219), inset -5px -5px 100px rgba(89, 28, 135, 0.308) ;    
-  /* filter: saturate(30%); */
-
 }
 
 
-h1{
-  margin-bottom: 1rem;
+h1{ margin-bottom: 1rem; }
+
+p{ color: aliceblue; }
+
+
+main>section, header{
+  opacity: 0;
+  transition: all 2s ease-in-out;
 }
 
-p{
-  color: aliceblue;
-}
-
-/* @keyframes op {
-  0%{
-    filter: grayscale(0%);
-  }
-  50%{
-    filter: grayscale(100%);
-  }
-  100%{
-    filter: grayscale(0%);
-  }
-} */
+.full{ opacity: 1; }

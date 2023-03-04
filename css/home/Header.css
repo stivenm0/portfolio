@@ -10,10 +10,6 @@ main, .header>*:not(nav){
   padding: 5%;
 }
 
-/* section{
-  padding: 10% 0;
-} */
-
 .navbar{
     display: flex;
     height: 2rem;
@@ -98,6 +94,10 @@ main, .header>*:not(nav){
   display: inline-block;
   color: rgb(0, 0, 0);
   box-shadow: inset 2px 2px 5px #08d7629a, inset -2px -2px 5px #08d7629a;
+}
+
+.header_networks>a:hover{
+  background-color: #11944a50;
 }
 
 

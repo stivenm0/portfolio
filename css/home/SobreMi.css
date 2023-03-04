@@ -1,9 +1,3 @@
-/* .sobreMi{
-    background-image: url("../../src/textu.svg");
-    background-position: bottom;
-    background-size: contain;
-} */
-
 
 .sobreMi_text{
     color: aliceblue;
@@ -40,10 +34,7 @@
     background-color: rgb(246, 250, 0);
 }
 
-.full{
-    opacity: 0;
-   
-  }
+
 
 
   .pr{

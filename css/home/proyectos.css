@@ -53,7 +53,7 @@
 
 .proyectos_card_details>p{
     margin: 2%;
-    font-size: 3.5vw;
+    /* font-size: 3.5vw; */
 }
 .proyectos_card_details>p>span{
     font-weight: 600;
@@ -61,7 +61,7 @@
 }
 
 .proyectos_card_details>a{
-    font-size: 4vw;
+    /* font-size: 4vw; */
     display: inline-block;
     margin: .5rem; 
     background-color: black;

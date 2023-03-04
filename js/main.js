@@ -1,6 +1,5 @@
 let nav = document.getElementById("navbar")
-
-
+let error = document.getElementById("error")
 
 window.addEventListener("scroll", ()=>{
     if(window.scrollY>10){
@@ -14,8 +13,6 @@ window.addEventListener("scroll", ()=>{
 let menu = document.getElementById("menu");
 let close = document.getElementById("close");
 let list= document.getElementById("list");
-
-
 
 function openMenu(){
     list.classList.toggle("animate__zoomIn");
@@ -32,23 +29,26 @@ function openMenu(){
     }, 200);
 }
 
+function cleanData(str){
+    str
+}
 
 
 function contacto(e){
     e.preventDefault();
-    console.log(e.target.nombre.value)
+
+    error.innerHTML= "";
+    for(let i=0; i<4; i++){
+        if(e.target[i].value.trim() === ""){
+            error.innerHTML += 	"• esta vacio el campo "+ e.target[i].name +"<br>"  
+        }
+    }
+
+    if(error.innerHTML === ""){
+        console.log(e.target[0].value)
+
+    }
 }
 
 
-let sobre = document.getElementById("sob")
 
-const observer = new IntersectionObserver((objetos)=>{
-    if(objetos[0].isIntersecting){
-        objetos[0].target.classList.remove("full");
-    }
-    console.log(objetos)
-},{
-
-});
-
-observer.observe(sobre);
