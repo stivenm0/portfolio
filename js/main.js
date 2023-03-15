@@ -45,7 +45,7 @@ function contacto(e){
     }
 
     if(error.innerHTML === ""){
-        console.log(e.target[0].value)
+        e.target.submit();
 
     }
 }
